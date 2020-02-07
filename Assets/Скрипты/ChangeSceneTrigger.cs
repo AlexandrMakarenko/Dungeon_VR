@@ -15,7 +15,8 @@ public class ChangeSceneTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(SceneName);
+            GameMenedjer.levelName = SceneName;
+            SceneManager.LoadScene("Loading");
         }
     }
 }

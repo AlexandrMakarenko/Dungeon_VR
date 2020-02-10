@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 using UnityEngine.UI;
+using System;
+
 public class Vvod : MonoBehaviour
 {
     public Text VLogin = null;
@@ -10,6 +12,7 @@ public class Vvod : MonoBehaviour
     //public GameObject name;
     public GameObject klavaWithOutCaps = null;
     public GameObject klavaWithCaps = null;
+    public InputField Ilogin = null;
 
     private bool enter = true;
     private string login;
@@ -612,24 +615,21 @@ public class Vvod : MonoBehaviour
 
     public void DeleteSymbol()
     {
-        //for (int handIndex = 0; handIndex < Player.instance.hands.Length; handIndex++)
-        //{
-        //    Hand hand = Player.instance.hands[handIndex];
-        //    if (hand != null)
-        //    {
-                if (enter == true)
-                {
-                    login = VLogin.text;
-                    int ind = login.Length - 3; // получаем длину строки
-                    //вырезаем ласт символ
-                    login = login.Remove(ind);
-                    VLogin.text = login;
-                }
-                else
-                {
-                    VPassword.text = VPassword.text;
-                }
-        //    }
-        //}
+
+        if (enter == true)
+        {
+            //char[] chars = VLogin.text.ToCharArray();
+            //// int dli = chars.Length;
+            //Array.Resize(ref chars, chars.Length - 1);
+            //VLogin.text = chars.ToString();
+           // VLogin.text = VLogin.text.Length - 1;
+
+        }
+        else
+        {
+            VPassword.text = VPassword.text;
+        }
     }
+
+    
 }

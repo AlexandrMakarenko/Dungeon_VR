@@ -4,10 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Button
-  - Controller
-  - projectile
-  - FxTemporaire
+  - Enemy1
+  - Tp
+  - Key
+  - Interactable
+  - AmmoPlus
   layers:
   - Default
   - TransparentFX
@@ -17,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - Controller
-  - Player
-  - 
+  - Interactable
+  - Hand
+  - Grabbable
   - 
   - 
   - 

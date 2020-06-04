@@ -2,13 +2,13 @@
   "source": "Unity",
   "applications": [
     {
-      "app_key": "application.generated.unity.dungeon_vr.exe",
+      "app_key": "application.generated.unity.dangeon.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "F:\\project unity\\Dungeon_VR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "F:\\project unity\\Dangeon\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
-          "name": "Dungeon_VR [Testing]"
+          "name": "Dangeon [Testing]"
         }
       }
     }

@@ -6,12 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: a9c9b3122b5e9e24d9c760b46d5cdfb6
-  - enabled: 1
     path: Assets/Scenes/Labirint.unity
     guid: 10649e653c942a445aba242d68081bca
-  - enabled: 1
-    path: Assets/Scenes/Loading.unity
-    guid: b09bba8c7c6bc944a851f886860104f8
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c6f355930731791448a90d65977e6303,
+      type: 2}

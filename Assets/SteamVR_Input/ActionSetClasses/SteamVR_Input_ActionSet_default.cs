@@ -113,11 +113,35 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean PauseMenu
+        public virtual SteamVR_Action_Boolean Fire
         {
             get
             {
-                return SteamVR_Actions.default_PauseMenu;
+                return SteamVR_Actions.default_Fire;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean ReloadTap
+        {
+            get
+            {
+                return SteamVR_Actions.default_ReloadTap;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean Changer
+        {
+            get
+            {
+                return SteamVR_Actions.default_Changer;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean MenuButton
+        {
+            get
+            {
+                return SteamVR_Actions.default_MenuButton;
             }
         }
         

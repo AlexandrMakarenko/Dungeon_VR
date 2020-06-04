@@ -7,7 +7,6 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 
 namespace Valve.VR.InteractionSystem
 {
@@ -42,25 +41,13 @@ namespace Valve.VR.InteractionSystem
         public SteamVR_Action_Boolean headsetOnHead = SteamVR_Input.GetBooleanAction("HeadsetOnHead");
 
 		public bool allowToggleTo2D = true;
-        public SteamVR_Action_Boolean m_PauseMenu = null;
 
 
-        //-------------------------------------------------
-        // Singleton instance of the Player. Only one can exist at a time.
-        //-------------------------------------------------
-        private static Player _instance;
-
-        private void PauseMenu()
-        {
-            if (m_PauseMenu.GetStateDown(SteamVR_Input_Sources.LeftHand))
-                SceneManager.LoadScene("Menu");
-
-            if (m_PauseMenu.GetStateDown(SteamVR_Input_Sources.RightHand))
-                SceneManager.LoadScene("Menu");
-
-        }
-
-        public static Player instance
+		//-------------------------------------------------
+		// Singleton instance of the Player. Only one can exist at a time.
+		//-------------------------------------------------
+		private static Player _instance;
+		public static Player instance
 		{
 			get
 			{
@@ -294,8 +281,6 @@ namespace Valve.VR.InteractionSystem
 
         protected virtual void Update()
         {
-            PauseMenu();
-
             if (SteamVR.initializedState != SteamVR.InitializedStates.InitializeSuccess)
                 return;
 
